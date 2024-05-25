@@ -24,7 +24,8 @@ function Chat() {
   }
 
   return (
-    <>
+    <div id="chat" className="">
+      <h2>Here is a neat little chat function</h2>
       <section>
         {list.map((input, index) => (
           <Card key={index} string={input}>{input}</Card>
@@ -40,7 +41,7 @@ function Chat() {
       />
       <small>Maximum 64 characters</small>
       <button type="submit" onClick={onAddSillycard}>Add Card</button>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* underline animation for hyperlinks -- start */
+
+.a-animation{
+    list-style: none;
+    transition: all 0.4s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.a-animation:hover {
+    transform: scale(1.1);
+}
+
+.a-animation:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: flex;
+    background: black;
+    transition: 300ms;
+}
+
+.a-animation:hover::after {
+    width: 100%;
+}
+
+/* underline animation for hyperlinks -- end */

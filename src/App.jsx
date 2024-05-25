@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Highlights from "./components/Highlights";
-import Chat from "./components/Chat";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   const containerRef = useRef(null);
@@ -19,15 +20,18 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <main ref={containerRef}>
-        <Hero />
-        <Highlights />
-        <Chat />
-      </main>
-      <footer><h2>Footer</h2></footer>
-    </>
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main ref={containerRef} className="bg-white flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/blog" element={<BlogPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
