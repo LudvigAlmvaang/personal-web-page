@@ -7,9 +7,8 @@ const Header = () => {
         <Nav />
         <h1 className="lg:justify-self-center self-center justify-self-end font-bold text-2xl lg:mr-[0px] mr-[40px] prevent-select">Header</h1>
         <ul className="lg:flex hidden font-bold mr-[40px] text-[#333333] text-xl space-x-8 justify-self-end self-center">
-          <li><a href="#home" className="hover:underline">Home</a></li>
-          <li><a href="#projects" className="hover:underline">Projects</a></li>
-          <li><a href="#contact" className="hover:underline">Contact</a></li>
+          <li><a href="mailto:email@example.com" className="hover:underline">Email</a></li>
+          <li><a href="https://github.com/LudvigAlmvaang/personal-web-page" className="hover:underline">Github Repository</a></li>
         </ul>
       </nav>
     </header>

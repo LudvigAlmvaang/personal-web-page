@@ -7,12 +7,15 @@ const Sidebar = React.forwardRef(({ isOpen, onClose }, ref) => {
       ref={ref}
       className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white p-4 transition-transform transform z-20 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
     >
-      <ul className="space-y-4">
+      <ul className="space-y-4 text-xl">
         <li>
           <NavLink to="/" onClick={onClose}>Home</NavLink>
         </li>
         <li>
           <NavLink to="/blog" onClick={onClose}>Blog</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" onClick={onClose}>About</NavLink>
         </li>
       </ul>
     </div>
