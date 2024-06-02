@@ -5,18 +5,21 @@ import img3 from "../assets/Little-Lemon.jpg";
 
 const projects = [{
     id: 0,
-    title: "<a href='https://github.com/LudvigAlmvaang/little-lemon-react'>little-lemon-react</a>",
+    title: "little-lemon-react",
     description: "This was my capstone project for the Meta Front-End developer professional certificate.",
+    repository: "https://github.com/LudvigAlmvaang/little-lemon-react",
     imageSrc: img1
   }, {
     id: 1,
-    title: "<a href='https://github.com/LudvigAlmvaang/little-lemon-react'>Simple Working Calculator</a>",
-    description: "This was my very first project while learning React.",
+    title: "Simple Working Calculator",
+    description: "This was my very first React project.",
+    repository: "https://github.com/LudvigAlmvaang/Simple-Working-Calculator",
     imageSrc: img2
   }, {
     id: 2,
-    title: "<a href='https://github.com/LudvigAlmvaang/little-lemon-react'>Little-Lemon</a>",
+    title: "Little-Lemon",
     description: "This was my very first project that I made for a course in HTML and CSS.",
+    repository: "https://github.com/LudvigAlmvaang/Little-Lemon",
     imageSrc: img3
   }];
 
@@ -26,7 +29,7 @@ const Highlights = () => {
       <section className="flex flex-col place-items-center m-[24px] gap-8">
         <h2 className="place-self-center lg:[grid-column:1/-1] text-xl">Projects</h2>
         {projects.map((project) => (
-          <Card id={project.id} description={project.description} title={project.title} imageSrc={project.imageSrc} />
+          <Card id={project.id} title={project.title} description={project.description} repository={project.repository} imageSrc={project.imageSrc} />
         ))}
       </section>
     </>
