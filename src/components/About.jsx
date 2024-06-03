@@ -3,7 +3,7 @@ const About = () => {
     <article>
       <div className="flex flex-col place-items-center m-[24px] my-40 gap-4 ">
         <div id="header">
-          <h1 className="text-xl text-bold">About this web application</h1>
+          <h1 className="text-xl text-bold">About</h1>
         </div>
         <div className="max-w-3xl text-justify">
           <p>

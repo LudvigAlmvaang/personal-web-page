@@ -30,7 +30,7 @@ const Nav = () => {
         onClose={toggleNavbar}
       />
       <button
-        className="justify-self-start self-center ml-[40px] font-bold text-6xl"
+        className="justify-self-start self-center ml-[32px] lg:ml-[64px] font-bold text-6xl"
         onClick={toggleNavbar}
       >
         {isOpen ? <X size={64} /> : <Menu size={64} />}
