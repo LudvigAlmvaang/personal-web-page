@@ -7,7 +7,7 @@ const Header = () => {
         <Nav />
         <h1 className="lg:justify-self-center self-center justify-self-end font-bold text-2xl lg:mr-[0px] mr-[32px] prevent-select">Header</h1>
         <ul className="lg:flex hidden font-bold mr-[64px] text-[#333333] text-xl space-x-8 justify-self-end self-center">
-          <li><a href="https://github.com/LudvigAlmvaang/personal-web-page" className="hover:underline">Github Repository</a></li>
+          <li><a href="https://github.com/LudvigAlmvaang/personal-web-page" target="_blank" rel="noopener noreferrer" className="hover:underline">Github Repository</a></li>
         </ul>
       </nav>
     </header>
